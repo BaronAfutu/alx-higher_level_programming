@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a Square from Rectangle."""
+"""Define a Rectangle subclass Square."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
@@ -18,7 +18,7 @@ class Square(Rectangle):
 		
 	def area(self):
         """Return the area of the Square."""
-        return self.__size**2
+        return self.__size ** self.__size
 
     def __str__(self):
         """Return the print() and str() representation of a Square."""
